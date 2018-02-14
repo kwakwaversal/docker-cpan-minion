@@ -13,7 +13,7 @@ $ curl http://localhost:3000/minion
 This docker image is intended to be used to connect to an already existing
 Minion backend. It assumes two things:
 
-* You have a running [PostgreSQL] backend already running this version of [Minion]
+* You have a running [PostgreSQL] backend already running the same migration version of [Minion]
 * You have a `.pg_service.conf` file with a service name to connect to your [PostgreSQL] instance
 
 # What is Minion?
