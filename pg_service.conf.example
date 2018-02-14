@@ -1,0 +1,15 @@
+# Uses `default` as the default service name
+[minion-default]
+host=localhost
+port=5432
+user=postgres
+password=password
+dbname=postgres
+
+# Can set `-e MINION_SERVICE_NAME=another-minion` to use a different service name
+[another-minion]
+host=db
+port=5432
+user=postgres
+password=password
+dbname=postgres
