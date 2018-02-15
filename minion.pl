@@ -32,7 +32,11 @@ helper pg => sub {
         };
 
         if ($current < $latest) {
-            die "Current migration version is less than latest version ($current < $latest). Please update manually";
+            die "Current migration version is less than the latest version ($current < $latest). Please update manually";
+        }
+
+        if ($current > $latest) {
+            die "Current migration version is greater than the latest version ($current > $latest). Please update manually";
         }
 
         $checked_migration_version++;

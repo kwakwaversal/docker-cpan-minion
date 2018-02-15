@@ -1,4 +1,4 @@
-# Uses `default` as the default service name
+# Uses `minion-default` as the default service name
 [minion-default]
 host=localhost
 port=5432
