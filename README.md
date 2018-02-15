@@ -4,7 +4,7 @@
 # Synopsis
 ```bash
 $ docker run -it --rm -v ~/.pg_service.conf:/root/.pg_service.conf:ro \
-    --net=host -e MINION_SERVICE_NAME=minion-default kwakwa/minion-cpan
+    --net=host -e MINION_SERVICE_NAME=minion-default kwakwa/cpan-minion
 
 $ curl http://localhost:3000/minion
 ```
